@@ -1,0 +1,17 @@
+<p>Weather Forcast</p>
+<div >
+<table border="2">
+    <tr>
+        <td>Date</td>
+        <td>summary</td>
+        <td>tem_C</td>
+        <td>tem_f</td>
+    </tr>
+    <tr *ngFor="let item of (response |async)">
+        <td>{{item.date}}</td>     
+        <td>{{item.temperatureC}}</td>
+        <td>{{item.temperatureF}}</td>
+        <td>{{item.summary}}</td>
+    </tr>
+</table>
+</div>
